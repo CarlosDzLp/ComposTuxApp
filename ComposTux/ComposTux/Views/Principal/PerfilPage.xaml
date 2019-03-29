@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="ComposTux.Views.Principal.PerfilPage"
+    xmlns:controls="clr-namespace:ComposTux.Controls;assembly=ComposTux"
+    xmlns:behaviors="clr-namespace:ComposTux.Behaviors;assembly=ComposTux"
+    BackgroundColor="White"
+    Title="Perfil">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem  
+            Icon="ic_edit"
+            Order="Default" 
+            Priority="0"          
+            Command="{Binding EditCommand}"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <ScrollView
+            VerticalScrollBarVisibility="Never"
+            HorizontalScrollBarVisibility="Never">
+            <StackLayout>
+                <StackLayout>
+                    <Grid
+                        RowSpacing="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="200"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <StackLayout
+                            Grid.Row="0"
+                            Grid.Column="0">
+                            <controls:CustomMap                          
+                                MapType="Street"                               
+                                MapPosition="{Binding MyPosition}"
+                                MapPins="{Binding AllPines}"
+                                RouteCoordinates="{Binding Ruta}">                               
+                            </controls:CustomMap>
+                        </StackLayout>
+                        <StackLayout
+                            Grid.Row="1"
+                            Grid.Column="0"
+                            BackgroundColor="#1976D2"/>
+                        <StackLayout
+                            Margin="10,15"
+                            Grid.Row="1"
+                            Grid.Column="0"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Center"
+                            Orientation="Horizontal">
+                            <Label
+                                VerticalOptions="Center"
+                                HorizontalOptions="Center"
+                                VerticalTextAlignment="Center"
+                                HorizontalTextAlignment="Center"
+                                Text="{Binding User.Location}"
+                                FontSize="Small"
+                                FontAttributes="Bold"
+                                TextColor="White"/>
+                            <StackLayout
+                                VerticalOptions="Center"
+                                HorizontalOptions="End">
+                                <Button
+                                    Text="Actualizar mapa"
+                                    TextColor="#1976D2"
+                                    BackgroundColor="White"
+                                    VerticalOptions="Center"
+                                    HorizontalOptions="Center"
+                                    Command="{Binding UpdateMapCommand}"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </Grid>                   
+                </StackLayout>
+                <StackLayout
+                    Padding="30,0">
+                    <controls:FloatingEntry
+                        Margin="0"
+                        IsEnabled="{Binding IsEnabled}"
+                        ActivePlaceholderColor="#1976D2"
+                        FloatingHintEnabled="True"
+                        PlaceholderColor="Black"
+                        Placeholder="Nombre"
+                        TextColor="Black"
+                        Text="{Binding User.NameUser}"/>
+                    <controls:FloatingEntry
+                        Margin="0"
+                        IsEnabled="{Binding IsEnabled}"
+                        ActivePlaceholderColor="#1976D2"
+                        FloatingHintEnabled="True"
+                        PlaceholderColor="Black"
+                        Placeholder="Apellidos"
+                        TextColor="Black"
+                        Text="{Binding User.LastNameUser}"/>
+                    <controls:FloatingEntry
+                        Margin="0"
+                        IsEnabled="{Binding IsEnabled}"
+                        ActivePlaceholderColor="#1976D2"
+                        FloatingHintEnabled="True"
+                        PlaceholderColor="Black"
+                        Placeholder="Usuario"
+                        TextColor="Black"
+                        Text="{Binding User.UserName}"/>
+                    <controls:FloatingEntry
+                        Margin="0"
+                        IsEnabled="{Binding IsEnabled}"
+                        ActivePlaceholderColor="#1976D2"
+                        FloatingHintEnabled="True"
+                        PlaceholderColor="Black"
+                        Placeholder="Correo"
+                        TextColor="Black"
+                        Text="{Binding User.Email}"/>
+                    <controls:FloatingEntry
+                        Margin="0"
+                        IsEnabled="{Binding IsEnabled}"
+                        ActivePlaceholderColor="#1976D2"
+                        FloatingHintEnabled="True"
+                        PlaceholderColor="Black"
+                        Placeholder="Contraseña"
+                        TextColor="Black"
+                        Text="{Binding User.PasswordUser}"/>
+                    <Button                        
+                        Command="{Binding SaveCommand}"
+                        IsEnabled="{Binding IsEnabled}"
+                        TextColor="White"
+                        BackgroundColor="#1976D2"
+                        Text="Guardar"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,339 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.0/",
+    "signature": "00edd66b031d9592155961adf197e6d615ddfe1c"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.0": {},
+    ".NETStandard,Version=v2.0/": {
+      "ComposTux/1.0.0": {
+        "dependencies": {
+          "Com.OneSignal": "3.2.2",
+          "NETStandard.Library": "2.0.3",
+          "Newtonsoft.Json": "12.0.1",
+          "Plugin.Permissions": "3.0.0.12",
+          "RestSharp": "106.6.9",
+          "Rg.Plugins.Popup": "1.1.5.188",
+          "Xam.Plugin.Geolocator": "4.5.0.6",
+          "Xamarin.FFImageLoading": "2.4.5.870-pre",
+          "Xamarin.FFImageLoading.Forms": "2.4.5.870-pre",
+          "Xamarin.FFImageLoading.Transformations": "2.4.5.870-pre",
+          "Xamarin.Forms": "3.6.0.264807",
+          "Xamarin.Forms.CarouselView": "2.3.0-pre2",
+          "Xamarin.Forms.Maps": "3.4.0.1008975",
+          "sqlite-net-pcl": "1.6.258-beta"
+        },
+        "runtime": {
+          "ComposTux.dll": {}
+        }
+      },
+      "Com.OneSignal/3.2.2": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.0/Com.OneSignal.Abstractions.dll": {
+            "assemblyVersion": "3.2.0.0",
+            "fileVersion": "1.0.0.0"
+          },
+          "lib/netstandard1.0/Com.OneSignal.dll": {
+            "assemblyVersion": "3.2.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.0": {},
+      "NETStandard.Library/2.0.3": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "Newtonsoft.Json/12.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.1.22727"
+          }
+        }
+      },
+      "Plugin.Permissions/3.0.0.12": {
+        "runtime": {
+          "lib/netstandard2.0/Plugin.Permissions.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "RestSharp/106.6.9": {
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {
+            "assemblyVersion": "106.6.9.0",
+            "fileVersion": "106.6.9.0"
+          }
+        }
+      },
+      "Rg.Plugins.Popup/1.1.5.188": {
+        "dependencies": {
+          "Xamarin.Forms": "3.6.0.264807"
+        },
+        "runtime": {
+          "lib/netstandard1.0/Rg.Plugins.Popup.dll": {
+            "assemblyVersion": "1.1.5.188",
+            "fileVersion": "1.1.5.188"
+          }
+        }
+      },
+      "sqlite-net-pcl/1.6.258-beta": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3",
+          "SQLitePCLRaw.bundle_green": "1.1.13"
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLite-net.dll": {
+            "assemblyVersion": "1.6.258.0",
+            "fileVersion": "1.6.258.0"
+          }
+        }
+      },
+      "SQLitePCLRaw.bundle_green/1.1.13": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3",
+          "SQLitePCLRaw.core": "1.1.13"
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLitePCLRaw.batteries_green.dll": {
+            "assemblyVersion": "1.1.13.388",
+            "fileVersion": "1.0.0.0"
+          },
+          "lib/netstandard1.1/SQLitePCLRaw.batteries_v2.dll": {
+            "assemblyVersion": "1.1.13.388",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "SQLitePCLRaw.core/1.1.13": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLitePCLRaw.core.dll": {
+            "assemblyVersion": "1.1.13.388",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Xam.Plugin.Geolocator/4.5.0.6": {
+        "runtime": {
+          "lib/netstandard2.0/Plugin.Geolocator.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Xamarin.FFImageLoading/2.4.5.870-pre": {
+        "runtime": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "assemblyVersion": "2.4.5.870",
+            "fileVersion": "2.4.5.870"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "assemblyVersion": "2.4.5.870",
+            "fileVersion": "2.4.5.870"
+          }
+        }
+      },
+      "Xamarin.FFImageLoading.Forms/2.4.5.870-pre": {
+        "dependencies": {
+          "Xamarin.FFImageLoading": "2.4.5.870-pre",
+          "Xamarin.Forms": "3.6.0.264807"
+        },
+        "runtime": {
+          "lib/netstandard1.0/FFImageLoading.Forms.dll": {
+            "assemblyVersion": "2.4.5.870",
+            "fileVersion": "2.4.5.870"
+          }
+        }
+      },
+      "Xamarin.FFImageLoading.Transformations/2.4.5.870-pre": {
+        "dependencies": {
+          "Xamarin.FFImageLoading": "2.4.5.870-pre"
+        },
+        "runtime": {
+          "lib/netstandard1.0/FFImageLoading.Transformations.dll": {
+            "assemblyVersion": "2.4.5.870",
+            "fileVersion": "2.4.5.870"
+          }
+        }
+      },
+      "Xamarin.Forms/3.6.0.264807": {
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.Core.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          },
+          "lib/netstandard2.0/Xamarin.Forms.Platform.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          },
+          "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "Xamarin.Forms.CarouselView/2.3.0-pre2": {
+        "dependencies": {
+          "Xamarin.Forms": "3.6.0.264807"
+        },
+        "runtime": {
+          "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.CarouselView.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Xamarin.Forms.Maps/3.4.0.1008975": {
+        "dependencies": {
+          "Xamarin.Forms": "3.6.0.264807"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.Maps.Design.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          },
+          "lib/netstandard2.0/Xamarin.Forms.Maps.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ComposTux/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Com.OneSignal/3.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-PsBU6DzJ5kVsJ64KqX+kZJI9m3Rrb8rkkW72jIDZN7SHxPcYxuE4/226aRYj+kXFYZV5XSCZUKZN8jW0SuxLCg==",
+      "path": "com.onesignal/3.2.2",
+      "hashPath": "com.onesignal.3.2.2.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-a/iSwnRZb+LHFk49hQOyThh/ZNC3vsbZsF65XwQIb863qF6msmhdQtxGXFL28Ob2NsCz/drEj28BJd/YPpLRBg==",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
+    },
+    "NETStandard.Library/2.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "path": "netstandard.library/2.0.3",
+      "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "Newtonsoft.Json/12.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jmVyoEyk0In8r+AObYQyFKVFm7uSRzE0XSHSbEtBJcZDMV6DqJoyB4FLcHwprPVhAh826so0db3DIKXVnpGoPA==",
+      "path": "newtonsoft.json/12.0.1",
+      "hashPath": "newtonsoft.json.12.0.1.nupkg.sha512"
+    },
+    "Plugin.Permissions/3.0.0.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-R8Rlzfci1byoPBGOiJfCMzu0HhhN6Q4Vq4YizlF41W946NEmoL/Mb8U5caP5t5KfSbdPQpzdQ9JfM8fxPG8pfw==",
+      "path": "plugin.permissions/3.0.0.12",
+      "hashPath": "plugin.permissions.3.0.0.12.nupkg.sha512"
+    },
+    "RestSharp/106.6.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8RNSrGB8OJqkVnUno0amSL1dsTXGkqVjRvpgwhDR1cy4xhwc/6PWAJFiz6B5cnwmCB9aYMGaHrgKfTt6iMziqw==",
+      "path": "restsharp/106.6.9",
+      "hashPath": "restsharp.106.6.9.nupkg.sha512"
+    },
+    "Rg.Plugins.Popup/1.1.5.188": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3z5Q6Bdvhi8J2e5Cj0lEQ3rseZXXYTCFd3FjWjDlRbBnJ2vtNPRui5DE8bwWjA2PiDyK+GNj/bhvy+enEzISBA==",
+      "path": "rg.plugins.popup/1.1.5.188",
+      "hashPath": "rg.plugins.popup.1.1.5.188.nupkg.sha512"
+    },
+    "sqlite-net-pcl/1.6.258-beta": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-U9dWZceRvo9h6lbJ6xWq1A2bv7lPZTlGDdN7rTRYgXPJ4wkNa0JCH3It5a80IBbjUWzKbOEz11MPpdblZdpNnA==",
+      "path": "sqlite-net-pcl/1.6.258-beta",
+      "hashPath": "sqlite-net-pcl.1.6.258-beta.nupkg.sha512"
+    },
+    "SQLitePCLRaw.bundle_green/1.1.13": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LHm53C/Imhtn9SMxQX2USt3ULkznQ47fRZg6o16hI4AIX/MIEuI8Zy40yJoDimZTBpkaxbDnScDjKz9M3ARqZQ==",
+      "path": "sqlitepclraw.bundle_green/1.1.13",
+      "hashPath": "sqlitepclraw.bundle_green.1.1.13.nupkg.sha512"
+    },
+    "SQLitePCLRaw.core/1.1.13": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UcP955bF6FtgzSu6S9jcC4FUzOqn5/E6dxby5CzzSxLYZHvGfDntfUzgwm/HD3nJgSpCi9VDNwU7TWVPICJdiQ==",
+      "path": "sqlitepclraw.core/1.1.13",
+      "hashPath": "sqlitepclraw.core.1.1.13.nupkg.sha512"
+    },
+    "Xam.Plugin.Geolocator/4.5.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rbWNjW7o14EtZa+yjPLujQg+PLVF6M490ooNx9QK/Z6El+uRA2EFut+lT/OAetWFzdPcv9LCs0YGOTvs9e7taQ==",
+      "path": "xam.plugin.geolocator/4.5.0.6",
+      "hashPath": "xam.plugin.geolocator.4.5.0.6.nupkg.sha512"
+    },
+    "Xamarin.FFImageLoading/2.4.5.870-pre": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-u2RWfPM1ljuX55zeiYt6KVk1qCIdhjirWSL+Er8HDhCBKOTBxFmBsRGiyNqG8lr+ihebdmRvPVq/DltJvFUjqg==",
+      "path": "xamarin.ffimageloading/2.4.5.870-pre",
+      "hashPath": "xamarin.ffimageloading.2.4.5.870-pre.nupkg.sha512"
+    },
+    "Xamarin.FFImageLoading.Forms/2.4.5.870-pre": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RuaASJrWfAvvccYaR/6rYIG9cgTAK81Nefbifuq2KLnaOOHTTx9GOstlcSseKdFlmaQ9rpgg5JyIpO6XomRxLQ==",
+      "path": "xamarin.ffimageloading.forms/2.4.5.870-pre",
+      "hashPath": "xamarin.ffimageloading.forms.2.4.5.870-pre.nupkg.sha512"
+    },
+    "Xamarin.FFImageLoading.Transformations/2.4.5.870-pre": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-McZhk3xltDNe0osl7zoNgSH6sVofRt+bzwtifS1AEbqahW0CPDwgJgnVbMXNN7w1f4YjqtyfUCOT79Wp+1D0rQ==",
+      "path": "xamarin.ffimageloading.transformations/2.4.5.870-pre",
+      "hashPath": "xamarin.ffimageloading.transformations.2.4.5.870-pre.nupkg.sha512"
+    },
+    "Xamarin.Forms/3.6.0.264807": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-T7gYS3PoGNtp6D7GAX7fF4QzR7NC36NNQSiuEb5TXO8rEqkZGwpC4u/6S62rH0wL3dabWNVpJPPnL5jZvWeoVg==",
+      "path": "xamarin.forms/3.6.0.264807",
+      "hashPath": "xamarin.forms.3.6.0.264807.nupkg.sha512"
+    },
+    "Xamarin.Forms.CarouselView/2.3.0-pre2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1QJzPUm9dLBu+i3NGHPZmk7w58kCb74i8QbtrDLbPZesqVjAaEnRrGjKTvZlxJCEKWPKgqZMb0af30+Al82KEQ==",
+      "path": "xamarin.forms.carouselview/2.3.0-pre2",
+      "hashPath": "xamarin.forms.carouselview.2.3.0-pre2.nupkg.sha512"
+    },
+    "Xamarin.Forms.Maps/3.4.0.1008975": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XqMqivFWe9n5xoT3MuUG1s9sKe5tGpWdnHSarurxS2pSWRK0vuzWHdIBIUxJbe/nPSeAUzOI4HuvtHBhixxrbQ==",
+      "path": "xamarin.forms.maps/3.4.0.1008975",
+      "hashPath": "xamarin.forms.maps.3.4.0.1008975.nupkg.sha512"
+    }
+  }
+}

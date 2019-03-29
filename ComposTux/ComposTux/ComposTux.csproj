@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="3.6.0.264807" />
+    <PackageReference Include="Com.OneSignal" Version="3.2.2" />
+    <PackageReference Include="Rg.Plugins.Popup" Version="1.1.5.188" />
+    <PackageReference Include="Xamarin.Forms.CarouselView" Version="2.3.0-pre2" />
+    <PackageReference Include="Xamarin.Forms.Maps" Version="3.4.0.1008975" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.6.258-beta" />
+    <PackageReference Include="Xamarin.FFImageLoading.Transformations" Version="2.4.5.870-pre" />
+    <PackageReference Include="Xamarin.FFImageLoading" Version="2.4.5.870-pre" />
+    <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.5.870-pre" />
+    <PackageReference Include="RestSharp" Version="106.6.9" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+    <PackageReference Include="Xam.Plugin.Geolocator" Version="4.5.0.6" />
+    <PackageReference Include="Plugin.Permissions" Version="3.0.0.12" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controls\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Models\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="ViewModels\Base\" />
+    <Folder Include="ViewModels\Popups\" />
+    <Folder Include="ViewModels\Principal\" />
+    <Folder Include="ViewModels\Session\" />
+    <Folder Include="Views\" />
+    <Folder Include="Views\Session\" />
+    <Folder Include="Views\Popups\" />
+    <Folder Include="Views\Principal\" />
+    <Folder Include="Models\Chat\" />
+    <Folder Include="Views\Principal\Templates\" />
+    <Folder Include="Settings\" />
+    <Folder Include="DbLocal\" />
+    <Folder Include="Service\" />
+    <Folder Include="Models\Token\" />
+    <Folder Include="Models\User\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib">
+      <HintPath>..\..\..\..\..\Library\Frameworks\Xamarin.Android.framework\Versions\9.1.8-0\lib\xamarin.android\xbuild-frameworks\MonoAndroid\v1.0\mscorlib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

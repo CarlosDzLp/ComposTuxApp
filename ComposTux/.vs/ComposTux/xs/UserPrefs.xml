@@ -1,0 +1,52 @@
+﻿<Properties StartupConfiguration="{84B6E7A8-8906-4CD8-9BD3-E82DE03BF84E}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ComposTux/ViewModels/Principal/PerfilPageViewModel.cs">
+    <Files>
+      <File FileName="ComposTux/ViewModels/Principal/PerfilPageViewModel.cs" Line="140" Column="129" />
+      <File FileName="ComposTux/Views/Principal/PerfilPage.xaml" Line="39" Column="66" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ComposTux" expanded="True">
+            <Node name="ComposTux" expanded="True">
+              <Node name="Controls" expanded="True" />
+              <Node name="ViewModels" expanded="True">
+                <Node name="Principal" expanded="True">
+                  <Node name="PerfilPageViewModel.cs" selected="True" />
+                </Node>
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Principal" expanded="True">
+                  <Node name="PerfilPage.xaml" expanded="True" />
+                </Node>
+              </Node>
+            </Node>
+            <Node name="ComposTux.Android" expanded="True">
+              <Node name="Controls" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.ComposTux.Android AndroidDesignerPreferredTheme="Theme.DeviceDefault" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.6NU7N18403008952" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint enabled="false" file="/Users/CarlosDiaz/Projects/ComposTux/ComposTux/Views/Principal/MessagePage.xaml.cs" relfile="ComposTux/Views/Principal/MessagePage.xaml.cs" line="42" column="1" />
+      <Breakpoint enabled="false" file="/Users/CarlosDiaz/Projects/ComposTux/ComposTux/Views/Principal/MessagePage.xaml.cs" relfile="ComposTux/Views/Principal/MessagePage.xaml.cs" line="16" column="1" />
+      <Breakpoint enabled="false" file="/Users/CarlosDiaz/Projects/ComposTux/ComposTux.Android/Controls/CustomPagePerfil.cs" relfile="ComposTux.Android/Controls/CustomPagePerfil.cs" line="22" column="1" />
+      <Breakpoint file="/Users/CarlosDiaz/Projects/ComposTux/ComposTux/ViewModels/Principal/PerfilPageViewModel.cs" relfile="ComposTux/ViewModels/Principal/PerfilPageViewModel.cs" line="82" column="1" />
+      <Breakpoint file="/Users/CarlosDiaz/Projects/ComposTux/ComposTux/ViewModels/Base/BindableBase.cs" relfile="ComposTux/ViewModels/Base/BindableBase.cs" line="55" column="1" />
+      <Breakpoint file="/Users/CarlosDiaz/Projects/ComposTux/ComposTux/ViewModels/Principal/PerfilPageViewModel.cs" relfile="ComposTux/ViewModels/Principal/PerfilPageViewModel.cs" line="117" column="1" />
+      <Breakpoint file="/Users/CarlosDiaz/Projects/ComposTux/ComposTux.Android/Controls/EnabledButtonRenderer.cs" relfile="ComposTux.Android/Controls/EnabledButtonRenderer.cs" line="23" column="1" />
+      <Breakpoint file="/Users/CarlosDiaz/Projects/ComposTux/ComposTux.Android/Controls/EnabledButtonRenderer.cs" relfile="ComposTux.Android/Controls/EnabledButtonRenderer.cs" line="27" column="1" />
+      <Breakpoint file="/Users/CarlosDiaz/Projects/ComposTux/ComposTux.Android/Controls/EnabledButtonRenderer.cs" relfile="ComposTux.Android/Controls/EnabledButtonRenderer.cs" line="32" column="1" />
+      <Breakpoint file="/Users/CarlosDiaz/Projects/ComposTux/ComposTux/Controls/CustomButton.cs" relfile="ComposTux/Controls/CustomButton.cs" line="49" column="1" />
+      <Breakpoint file="/Users/CarlosDiaz/Projects/ComposTux/ComposTux/ViewModels/Principal/PerfilPageViewModel.cs" relfile="ComposTux/ViewModels/Principal/PerfilPageViewModel.cs" line="159" column="1" />
+      <Breakpoint file="/Users/CarlosDiaz/Projects/ComposTux/ComposTux.Android/Controls/CustomMapRenderer.cs" relfile="ComposTux.Android/Controls/CustomMapRenderer.cs" line="76" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

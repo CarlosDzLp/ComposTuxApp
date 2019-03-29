@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{84B6E7A8-8906-4CD8-9BD3-E82DE03BF84E}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{c9e5eea5-ca05-42a1-839b-61506e0a37df}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ComposTux.Droid</RootNamespace>
+    <AssemblyName>ComposTux.Android</AssemblyName>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
+    <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Android.Support.Design" Version="27.0.2.1" />
+    <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="27.0.2.1" />
+    <PackageReference Include="Xamarin.Android.Support.v4" Version="27.0.2.1" />
+    <PackageReference Include="Xamarin.Android.Support.v7.CardView" Version="27.0.2.1" />
+    <PackageReference Include="Xamarin.Android.Support.v7.MediaRouter" Version="27.0.2.1" />
+    <PackageReference Include="Xamarin.Forms">
+      <Version>3.6.0.264807</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.Compat">
+      <Version>27.0.2.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.CustomTabs">
+      <Version>27.0.2.1</Version>
+    </PackageReference>
+    <PackageReference Include="Rg.Plugins.Popup">
+      <Version>1.1.5.188</Version>
+    </PackageReference>
+    <PackageReference Include="Com.OneSignal">
+      <Version>3.2.2</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms.CarouselView">
+      <Version>2.3.0-pre2</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms.Maps">
+      <Version>3.4.0.1008975</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.GooglePlayServices.Basement">
+      <Version>60.1142.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.GooglePlayServices.Base">
+      <Version>60.1142.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.GooglePlayServices.Maps">
+      <Version>60.1142.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.GooglePlayServices.Gcm">
+      <Version>60.1142.1</Version>
+    </PackageReference>
+    <PackageReference Include="Plugin.Permissions">
+      <Version>3.0.0.12</Version>
+    </PackageReference>
+    <PackageReference Include="Plugin.CurrentActivity">
+      <Version>2.1.0.4</Version>
+    </PackageReference>
+    <PackageReference Include="AndHUD">
+      <Version>1.4.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.FFImageLoading.Transformations">
+      <Version>2.4.5.870-pre</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.FFImageLoading">
+      <Version>2.4.5.870-pre</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.FFImageLoading.Forms">
+      <Version>2.4.5.870-pre</Version>
+    </PackageReference>
+    <PackageReference Include="sqlite-net-pcl">
+      <Version>1.6.258-beta</Version>
+    </PackageReference>
+    <PackageReference Include="Xam.Plugin.Geolocator">
+      <Version>4.5.0.6</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Helpers\Shared.cs" />
+    <Compile Include="Helpers\Dialogs.cs" />
+    <Compile Include="Controls\CustomTabbedPageRenderer.cs" />
+    <Compile Include="Controls\CustomPickerRenderer.cs" />
+    <Compile Include="Controls\CustomMasterDetailPageRenderer.cs" />
+    <Compile Include="Controls\CustomEntryRenderer.cs" />
+    <Compile Include="Controls\CustomContentViewRenderer.cs" />
+    <Compile Include="Controls\CustomButtonRenderer.cs" />
+    <Compile Include="Controls\CustomEditorRenderer.cs" />
+    <Compile Include="Controls\FloatingEntryRenderer.cs" />
+    <Compile Include="Helpers\PathString.cs" />
+    <Compile Include="Controls\CustomMapRender.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Tabbar.axml" />
+    <AndroidResource Include="Resources\layout\Toolbar.axml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\values\colors.xml" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\icon.xml" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\icon_round.xml" />
+    <AndroidResource Include="Resources\mipmap-hdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_history.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_home.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_map.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_plus.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\logo.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_history.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_home.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_map.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_plus.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\logo.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_history.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_home.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_map.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_plus.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\logo.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_history.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_home.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_map.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_plus.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\logo.png" />
+    <AndroidResource Include="Resources\drawable\facebook.png" />
+    <AndroidResource Include="Resources\drawable\gmail.png" />
+    <AndroidResource Include="Resources\drawable\ic_history.png" />
+    <AndroidResource Include="Resources\drawable\ic_home.png" />
+    <AndroidResource Include="Resources\drawable\ic_map.png" />
+    <AndroidResource Include="Resources\drawable\ic_plus.png" />
+    <AndroidResource Include="Resources\drawable\info_blue.png" />
+    <AndroidResource Include="Resources\drawable\info.png" />
+    <AndroidResource Include="Resources\drawable\logo.png" />
+    <AndroidResource Include="Resources\drawable\logout_blue.png" />
+    <AndroidResource Include="Resources\drawable\logout.png" />
+    <AndroidResource Include="Resources\drawable\messenger.png" />
+    <AndroidResource Include="Resources\drawable\outlook.png" />
+    <AndroidResource Include="Resources\drawable\profile_blue.png" />
+    <AndroidResource Include="Resources\drawable\profile.png" />
+    <AndroidResource Include="Resources\drawable\selected_circle.png" />
+    <AndroidResource Include="Resources\drawable\share_blue.png" />
+    <AndroidResource Include="Resources\drawable\share.png" />
+    <AndroidResource Include="Resources\drawable\snackBackground.xml" />
+    <AndroidResource Include="Resources\drawable\snackBarError.xml" />
+    <AndroidResource Include="Resources\drawable\unselected_circle.png" />
+    <AndroidResource Include="Resources\drawable\whatsapp.png" />
+    <AndroidResource Include="Resources\drawable\message_blue.png" />
+    <AndroidResource Include="Resources\drawable\message.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_scrolldown.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_scrolldown.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_scrolldown.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_scrolldown.png" />
+    <AndroidResource Include="Resources\drawable\ic_scrolldown.png" />
+    <AndroidResource Include="Resources\drawable\show.png" />
+    <AndroidResource Include="Resources\drawable\isshow.png" />
+    <AndroidResource Include="Resources\drawable\logo_splash.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_edit.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_edit.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_edit.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_edit.png" />
+    <AndroidResource Include="Resources\drawable\ic_edit.png" />
+    <AndroidResource Include="Resources\layout\MapInfoWindow.axml" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_pin.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_pin.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_pin.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_pin.png" />
+    <AndroidResource Include="Resources\drawable\ic_pin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\drawable\" />
+    <Folder Include="Resources\drawable-hdpi\" />
+    <Folder Include="Resources\drawable-xhdpi\" />
+    <Folder Include="Resources\drawable-xxhdpi\" />
+    <Folder Include="Resources\drawable-xxxhdpi\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Controls\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ComposTux\ComposTux.csproj">
+      <Project>{466552F3-4926-487D-9626-46B7117D7443}</Project>
+      <Name>ComposTux</Name>
+    </ProjectReference>
+  </ItemGroup>
+ <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+</Project>

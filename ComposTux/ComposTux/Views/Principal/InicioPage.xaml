@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="ComposTux.Views.Principal.InicioPage"
+    xmlns:cv="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"   
+    xmlns:controls="clr-namespace:ComposTux.Controls;assembly=ComposTux"
+    BackgroundColor="White"
+    Title="{Binding Title}"
+    Icon="ic_home">
+    <ContentPage.Content>
+        <RelativeLayout>
+            <ContentView
+                RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
+                RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}">
+                <ListView
+                    VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand">
+                    <ListView.Header>
+                        <StackLayout 
+                            BackgroundColor="#EDEDED"
+                            HeightRequest="200">
+                            <cv:CarouselView 
+                                ItemsSource="{Binding MyDataSource}" 
+                                Position="{Binding Position, Mode=TwoWay}">
+                                <cv:CarouselView.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackLayout 
+                                            HorizontalOptions="CenterAndExpand" 
+                                            VerticalOptions="CenterAndExpand">
+                                            <StackLayout
+                                                VerticalOptions="CenterAndExpand">
+                                                <Label 
+                                                    Text="{Binding Title}" 
+                                                    FontAttributes="Bold" 
+                                                    VerticalOptions="CenterAndExpand"
+                                                    VerticalTextAlignment="Center"
+                                                    HorizontalTextAlignment="Center" 
+                                                    TextColor="Black"  
+                                                    HorizontalOptions="CenterAndExpand"/>
+                                                <Button                         
+                                                    VerticalOptions="Center"
+                                                    HorizontalOptions="Center"
+                                                    Text="Prueba"
+                                                    HeightRequest="35"
+                                                    Padding="30,0"
+                                                    TextColor="White"
+                                                    BackgroundColor="Teal"/>
+                                            </StackLayout>
+                                        </StackLayout>
+                                    </DataTemplate>
+                                </cv:CarouselView.ItemTemplate>
+                            </cv:CarouselView>
+                            <controls:CarouselIndicator 
+                                Margin="0,-6,0,10"
+                                IndicatorHeight="12" 
+                                IndicatorWidth="12" 
+                                VerticalOptions="Center"
+                                UnselectedIndicator="unselected_circle" 
+                                SelectedIndicator="selected_circle" 
+                                Position="{Binding Position}" 
+                                ItemsSource="{Binding MyDataSource}"/>   
+                        </StackLayout>   
+                    </ListView.Header>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout></StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </ContentView>
+            <Button
+                BackgroundColor="#1976D2"
+                Image="ic_plus"
+                HeightRequest="60"
+                WidthRequest="60"
+                CornerRadius="30"
+                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1, Constant=-75}"
+                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1, Constant=-75}" />
+        </RelativeLayout>
+    </ContentPage.Content>
+</ContentPage>

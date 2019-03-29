@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="ComposTux.Views.Principal.MenuPage"
+    xmlns:controls="clr-namespace:ComposTux.Controls;assembly=ComposTux"
+    BackgroundColor="White"
+    Title="Menu">
+    <ContentPage.Content>
+        <StackLayout
+            VerticalOptions="FillAndExpand"
+            HorizontalOptions="FillAndExpand">
+            <StackLayout
+                Padding="0,100,0,0"
+                VerticalOptions="Center"
+                HorizontalOptions="Center">
+                <controls:CustomListView
+                    HasUnevenRows="true"
+                    SeparatorVisibility="Default"
+                    SeparatorColor="Gray"
+                    ItemsSource="{Binding ListMenu}"
+                    ItemSelectedCommand="{Binding ItemSelectedCommand}">
+                    <controls:CustomListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout
+                                    Padding="5"
+                                    Margin="0">
+                                    <Grid>
+                                        <Image                                            
+                                            Source="{Binding Icon}"
+                                            VerticalOptions="Center"
+                                            HorizontalOptions="Center"
+                                            HeightRequest="45"
+                                            WidthRequest="45"/>
+                                        <controls:BadgeView 
+                                            IsVisible="{Binding IsVisible}"
+                                            Text="1" 
+                                            BadgeColor="Red" 
+                                            VerticalOptions="Center" 
+                                            HorizontalOptions="End"/>
+                                    </Grid>                 
+                                    <Label
+                                        Text="{Binding Title}"
+                                        TextColor="Black"
+                                        VerticalTextAlignment="Center"
+                                        HorizontalTextAlignment="Center"
+                                        VerticalOptions="Center"
+                                        HorizontalOptions="Center"/>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </controls:CustomListView.ItemTemplate>
+                </controls:CustomListView>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

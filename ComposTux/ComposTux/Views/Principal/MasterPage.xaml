@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<controls:CustomMasterDetailPage  
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="ComposTux.Views.Principal.MasterPage"
+    xmlns:controls="clr-namespace:ComposTux.Controls;assembly=ComposTux"
+    xmlns:page="clr-namespace:ComposTux.Views.Principal;assembly=ComposTux"
+    DrawerWidth="300">
+    <controls:CustomMasterDetailPage.Master>
+        <page:MenuPage/>
+    </controls:CustomMasterDetailPage.Master>
+    <controls:CustomMasterDetailPage.Detail>
+        <NavigationPage
+            x:Name="navigationM"
+            BarTextColor="Black"
+            BarBackgroundColor="White">
+            <x:Arguments>
+                <page:HomePage/>
+            </x:Arguments>
+        </NavigationPage>
+    </controls:CustomMasterDetailPage.Detail>
+</controls:CustomMasterDetailPage >

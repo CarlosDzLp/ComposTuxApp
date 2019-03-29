@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabbedPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="ComposTux.Views.Principal.HomePage"
+    xmlns:controls="clr-namespace:ComposTux.Controls;assembly=ComposTux"
+    xmlns:page="clr-namespace:ComposTux.Views.Principal;assembly=ComposTux"
+    xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+    android:TabbedPage.ToolbarPlacement="Bottom"
+    android:TabbedPage.BarItemColor="Black"
+    android:TabbedPage.BarSelectedItemColor="#1976D2"
+    BackgroundColor="White"
+    Title="Compos-Tux"
+    BarTextColor="Black"
+    BarBackgroundColor="White">
+    <TabbedPage.Children>
+        <page:InicioPage/>
+        <page:MapPage/>
+        <page:HistoryPage/>
+    </TabbedPage.Children>
+</TabbedPage>

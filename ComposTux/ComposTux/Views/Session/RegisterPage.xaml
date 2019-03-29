@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="ComposTux.Views.Session.RegisterPage"
+    xmlns:controls="clr-namespace:ComposTux.Controls;assembly=ComposTux">
+    <ContentPage.Content>
+        <ScrollView>
+           <StackLayout
+                Padding="20,10">
+                <controls:FloatingEntry
+                    Margin="0"
+                    ActivePlaceholderColor="#1976D2"
+                    FloatingHintEnabled="True"
+                    PlaceholderColor="Black"
+                    Placeholder="Hola"
+                    TextColor="Black"
+                    Text="{Binding Email}"/>
+                <controls:FloatingEntry
+                    Margin="0"
+                    ActivePlaceholderColor="#1976D2"
+                    FloatingHintEnabled="True"
+                    PlaceholderColor="Black"
+                    Placeholder="Hola"
+                    TextColor="Black"
+                    Text="{Binding Email}"/>
+                <controls:FloatingEntry
+                    Margin="0"
+                    ActivePlaceholderColor="#1976D2"
+                    FloatingHintEnabled="True"
+                    PlaceholderColor="Black"
+                    Placeholder="Hola"
+                    TextColor="Black"
+                    Text="{Binding Email}"/>
+                <controls:FloatingEntry
+                    Margin="0"
+                    ActivePlaceholderColor="#1976D2"
+                    FloatingHintEnabled="True"
+                    PlaceholderColor="Black"
+                    Placeholder="Hola"
+                    TextColor="Black"
+                    Text="{Binding Email}"/>
+                <controls:FloatingEntry
+                    Margin="0"
+                    ActivePlaceholderColor="#1976D2"
+                    FloatingHintEnabled="True"
+                    PlaceholderColor="Black"
+                    Placeholder="Hola"
+                    TextColor="Black"
+                    Text="{Binding Email}"/>
+                <controls:FloatingEntry
+                    Margin="0"
+                    ActivePlaceholderColor="#1976D2"
+                    FloatingHintEnabled="True"
+                    PlaceholderColor="Black"
+                    Placeholder="Hola"
+                    TextColor="Black"
+                    Text="{Binding Email}"/>
+                <controls:CustomPicker
+                    IsCurvedCornersEnabled="true"
+                    CornerRadius="5"
+                    BorderWidth="3"
+                    BorderColor="#1976D2"
+                    Image="show"
+                    TextColor="Black"
+                    Title="Seleccione usuario"
+                    TitleColor="Gray"/>
+            </StackLayout> 
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
